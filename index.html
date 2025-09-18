@@ -19,14 +19,64 @@
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
       border-radius: 8px;
     }
+
+    /* Botões flutuantes */
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 999;
+    }
+
+    .floating-buttons a {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .floating-buttons a:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+
+    .floating-buttons img {
+      width: 28px;
+      height: 28px;
+      margin: 0;
+      box-shadow: none;
+      border-radius: 0;
+    }
   </style>
 </head>
 <body>
+  <!-- Imagens do portfólio -->
   <img src="pagina1.png" alt="Página 1">
   <img src="pagina2.png" alt="Página 2">
   <img src="pagina3.png" alt="Página 3">
   <img src="pagina4.png" alt="Página 4">
   <img src="pagina5.png" alt="Página 5">
   <img src="pagina6.png" alt="Página 6">
+
+  <!-- Botões flutuantes -->
+  <div class="floating-buttons">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/5561982055515" target="_blank" aria-label="WhatsApp">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" style="filter: invert(37%) sepia(94%) saturate(469%) hue-rotate(89deg) brightness(93%) contrast(92%);">
+    </a>
+    <!-- Instagram -->
+    <a href="https://instagram.com/nutri_katarinasantana" target="_blank" aria-label="Instagram">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="filter: invert(27%) sepia(76%) saturate(7489%) hue-rotate(316deg) brightness(97%) contrast(101%);">
+    </a>
+  </div>
 </body>
 </html>
